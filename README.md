@@ -5,7 +5,7 @@
 ---
 
 #### Putty Restart Inactive Session ####
-* [PuTTY-New-or-Restart.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/PuTTY-New-or-Restart.ahk)
+* [PuTTY-New-or-Restart.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Putty/PuTTY-New-or-Restart.ahk)
 ````
 PuTTY = "C:\tools\putty.exe"
 if WinActive("PuTTY (inactive)") {

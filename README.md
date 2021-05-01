@@ -4,7 +4,7 @@
 
 ---
 
-#### **Putty Restart Inactive Session** ####
+### **Putty Restart Inactive Session** ###
 * [PuTTY-New-or-Restart.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Putty/PuTTY-New-or-Restart.ahk)
 ````
 PuTTY = "C:\tools\putty.exe"
@@ -26,7 +26,7 @@ default to access the menu via Alt+Space or just Alt. But > this requires editin
 
 
 ---
-#### **Fix Crackling from ASIO4ALL Drivers** ####
+### **Fix Crackling from ASIO4ALL Drivers** ###
 * [resetAudioBuffer-StopCrackling.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Audio/resetAudioBuffer-StopCrackling.ahk)
 ````
 if WinExist("  ASIO4ALL v2.14 - www.asio4all.com - feedback@asio4all.com") {

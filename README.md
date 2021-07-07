@@ -9,7 +9,7 @@
 ````
 PuTTY = "C:\tools\putty.exe"
 if WinActive("PuTTY (inactive)") {
-	MouseMove 20, 20, R
+	MouseMove 25, 25, R
 	Sleep 50
 	MouseClick
 	Sleep 50

@@ -2,6 +2,8 @@
 
 ### Collection of scripts to do various things, slightly quicker.
 
+Tying these to macro keys is what makes them powerful.
+
 ---
 
 ### **Putty - Restart Inactive Session** ###

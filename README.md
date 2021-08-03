@@ -1,10 +1,10 @@
 # AutoHotKey Scripts
 
-### Collection of scripts to do various things
+### Collection of scripts to do various things, slightly quicker.
 
 ---
 
-### **Putty Restart Inactive Session** ###
+### **Putty - Restart Inactive Session** ###
 * [PuTTY-New-or-Restart.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Putty/PuTTY-New-or-Restart.ahk)
 ````
 PuTTY = "C:\tools\putty.exe"
@@ -26,7 +26,7 @@ default to access the menu via Alt+Space or just Alt. But > this requires editin
 
 
 ---
-### **Fix Crackling from ASIO4ALL Drivers** ###
+### **ASIO4ALL - Fix Crackling from ASIO4ALL Drivers** ###
 * [resetAudioBuffer-StopCrackling.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Audio/resetAudioBuffer-StopCrackling.ahk)
 ````
 if WinExist("  ASIO4ALL v2.14 - www.asio4all.com - feedback@asio4all.com") {
@@ -44,3 +44,47 @@ Sometimes on occasion ASIO4ALL will cause crackling and can quickly be fixed by 
 Created to alleviate the situation by adding it to a button the StreamDeck.
 
 ---
+
+
+### **Outlook - Desktop** ###
+Toggles the "Mark items as read when selection changes" in Outlook
+
+![Image of Outlook Reading Pane](https://github.com/cr0m/AutoHotKeyScripts/raw/main/Outlook/images/outlookreadingpane.png)
+
+* [Outlook-MarkItemReadToggle.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Outlook/Outlook-MarkItemReadToggle.ahk)
+````
+if WinExist("ahk_exe OUTLOOK.EXE")
+    WinActivate ; Use the window found by WinExist.
+	sleep 2
+	Send {ALT}
+	Sleep 1
+	Send V
+	Sleep 1
+	Send P
+	Sleep 1
+	Send N
+	Sleep 1
+	Send N
+	Sleep 1
+	Send {TAB}
+	Sleep 1
+	Send {SPACE}
+	Sleep 1
+	Send {ENTER}
+````
+Just a quick way to toggle the "Mark items as read when selection changes" in Outlook Desktop
+
+---
+
+Open a New Mail Window in Outlook
+
+* [Outlook-OpenNewEmail.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Outlook/Outlook-OpenNewEmail.ahk)
+```autohotkey
+if WinExist("ahk_exe OUTLOOK.EXE")
+    WinActivate ; Use the window found by WinExist.
+	Sleep 10
+	Send ^n
+```
+Just a quick way to start a New Email in Outlook Desktop
+
+

@@ -8,7 +8,7 @@ Tying these to macro keys is what makes them powerful.
 
 ### **Putty - Restart Inactive Session** ###
 * [PuTTY-New-or-Restart.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Putty/PuTTY-New-or-Restart.ahk)
-````
+```autohotkey
 PuTTY = "C:\tools\putty.exe"
 if WinActive("PuTTY (inactive)") {
 	MouseMove 25, 25, R
@@ -30,7 +30,7 @@ default to access the menu via Alt+Space or just Alt. But > this requires editin
 ---
 ### **ASIO4ALL - Fix Crackling from ASIO4ALL Drivers** ###
 * [resetAudioBuffer-StopCrackling.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Audio/resetAudioBuffer-StopCrackling.ahk)
-````
+```autohotkey
 if WinExist("  ASIO4ALL v2.14 - www.asio4all.com - feedback@asio4all.com") {
 ; Focus ASIO4ALL and sends the space key twice triggering a buffer reset from toggling a random device (doesn't matter which one)
     WinActivate ; use the window found above
@@ -54,7 +54,7 @@ Toggles the "Mark items as read when selection changes" in Outlook
 ![Image of Outlook Reading Pane](https://github.com/cr0m/AutoHotKeyScripts/raw/main/Outlook/images/outlookreadingpane.png)
 
 * [Outlook-MarkItemReadToggle.ahk](https://github.com/cr0m/AutoHotKeyScripts/blob/main/Outlook/Outlook-MarkItemReadToggle.ahk)
-````
+```autohotkey
 if WinExist("ahk_exe OUTLOOK.EXE")
     WinActivate ; Use the window found by WinExist.
 	sleep 2
